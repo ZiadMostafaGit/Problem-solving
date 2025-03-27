@@ -1,4 +1,5 @@
 class Solution(object):
+    
     def reverse(self, x):
         string=str(x)
         j=1
