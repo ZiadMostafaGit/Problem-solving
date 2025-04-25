@@ -1,11 +1,11 @@
-#include<iostream>
-#include <algorithm>
-#include <vector>
+#include <iostream>
 #include <unordered_map>
+#include <vector>
 using namespace std;
 
 /*
-Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Given an integer array nums, return true if any value appears at least twice in
+the array, and return false if every element is distinct.
 
 
 
@@ -41,41 +41,27 @@ Output: true
 
 */
 
-
-
 class Solution {
 public:
-    static bool containsDuplicate(vector<int>& nums) {
+  static bool containsDuplicate(vector<int> &nums) {
 
+    unordered_map<int, int> map;
 
-        unordered_map<int,int>map;
+    for (int num : nums) {
 
-        for(int num:nums){
-
-            if(map.find(num)!=map.end()){
-                return true;
-            }
-            map[num]=num;
-
-
-        }
-
-        return false;
-
+      if (map.find(num) != map.end()) {
+        return true;
+      }
+      map[num] = num;
     }
+
+    return false;
+  }
 };
 
+int main() {
 
-
-int main(){
-
-
-vector<int>nums={1,2,3};
-bool res=Solution::containsDuplicate(nums);
-cout<<res<<endl;
-
-
-
-
-
+  vector<int> nums = {1, 2, 3};
+  bool res = Solution::containsDuplicate(nums);
+  cout << res << endl;
 }
