@@ -1,5 +1,6 @@
 def four_sum(nums: List[int], target: int) -> List[List[int]]:
     nums.sort()
+
     result = []
 
     for i in range(len(nums) - 3):
@@ -17,7 +18,7 @@ def four_sum(nums: List[int], target: int) -> List[List[int]]:
             while left < right:
                 total = nums[i] + nums[j] + nums[left] + nums[right]
 
-                if total == target:  
+                if total == target:
                     result.append([nums[i], nums[j], nums[left], nums[right]])
 
                     # Skip duplicates for the third and fourth numbers
