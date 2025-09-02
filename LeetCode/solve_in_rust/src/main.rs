@@ -1,4 +1,5 @@
 // mod four_sum;
+mod arrangingCoins;
 //mod Relative_Rank;
 mod find_median_from_data;
 // mod next_permutation;
