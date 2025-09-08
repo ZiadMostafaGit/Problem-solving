@@ -1,6 +1,7 @@
 // mod four_sum;
 mod arrangingCoins;
 mod capacity_To_Ship_Packages_Within_D_Days;
+mod magneticForceBetweenTwoBall;
 //mod Relative_Rank;
 // mod find_median_from_data;
 // mod next_permutation;
